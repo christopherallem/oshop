@@ -1,4 +1,4 @@
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -12,9 +12,10 @@ export class ProductService {
     return this.db.list('/products').push(product);
   }
 
-  getAll() {
-    return this.db.list('/products');
-  }
+  getAll(): FirebaseListObservable<any[]>
+{
+return this.db.list('/products');
+}
 
   get(productId){
     return this.db.object('/products/' + productId);
