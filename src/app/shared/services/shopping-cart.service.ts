@@ -1,10 +1,10 @@
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { Product } from './models/product';
+import { ShoppingCartComponent } from '../../shopping-cart/shopping-cart.component';
+import { Product } from 'shared/models/product';
 import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/take';
 import { take, map } from 'rxjs/operators';
-import { ShoppingCart } from './models/shopping-cart';
+import { ShoppingCart } from 'shared/models/shopping-cart';
 import { Observable } from 'rxjs';
 
 @Injectable({

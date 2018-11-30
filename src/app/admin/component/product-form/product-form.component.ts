@@ -1,6 +1,6 @@
-import { CategoryService } from './../../category.service';
+import { CategoryService } from 'shared/services/category.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ProductService } from 'src/app/product.service';
+import { ProductService } from 'shared/services/product.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import 'rxjs/add/operator/do';
 import { take } from 'rxjs/operators';

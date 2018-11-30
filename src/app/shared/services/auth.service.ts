@@ -1,5 +1,5 @@
 import { UserService } from './user.service';
-import { AppUser } from './models/app.user';
+import { AppUser } from 'shared/models/app.user';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
